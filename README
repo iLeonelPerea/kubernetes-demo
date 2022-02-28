@@ -20,7 +20,7 @@ Run mariadb service
 `kubectl apply -f mariadb.yaml`
 
 Check than you can access mariadb pod
-`kubectl exec -it db-services-0 bash`
+`kubectl exec -it db-services-sts-0 bash`
 
 # Run a service app that uses mariadb
 
