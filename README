@@ -1,0 +1,29 @@
+# Enable kubernetes on docker-desktop
+
+Verify that you are using the development environment
+`kubectl config current-context`
+`kubectl cluster-info`
+
+List nodes availables
+`kubectl get nodes`
+
+# Test a basic nginx service
+
+Run nginx service
+`kubectl apply -f nginx.yml`
+
+Go to browser and test the url `localhost:3000`
+
+# Create a mariadb service
+
+Run mariadb service
+`kubectl apply -f mariadb.yaml`
+
+Check than you can access mariadb pod
+`kubectl exec -it db-services-0 bash`
+
+# Run a service app that uses mariadb
+
+Create service app
+`kubectl apply -f service.yml`
+
