@@ -17,10 +17,10 @@ Go to browser and test the url `localhost:3000`
 # Create a mariadb service
 
 Run mariadb service
-`kubectl apply -f mariadb.yaml`
+`kubectl apply -f mariadb.yml`
 
 Check than you can access mariadb pod
-`kubectl exec -it db-services-sts-0 bash`
+`kubectl exec -it db-services-sts-0 -- bash`
 
 # Run a service app that uses mariadb
 
